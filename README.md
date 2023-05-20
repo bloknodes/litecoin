@@ -1,0 +1,2 @@
+# litecoin
+Litecoin on Docker
