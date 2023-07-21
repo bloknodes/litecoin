@@ -18,8 +18,8 @@ Persistence:
 
 ## Container Images
 
-- `[bloknodes/litecoin:latest](https://hub.docker.com/r/bloknodes/litecoin)`
-- `[bloknodes/litecoin:0.21.2.1](https://hub.docker.com/r/bloknodes/litecoin)`
+- [bloknodes/litecoin:latest](https://hub.docker.com/r/bloknodes/litecoin)
+- [bloknodes/litecoin:0.21.2.1](https://hub.docker.com/r/bloknodes/litecoin)
 
 ## JSON RPC Examples
 
