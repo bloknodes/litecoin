@@ -16,6 +16,11 @@ Networks:
 Persistence:
 - The container uses the path `/blockchain` inside the container and by default the `docker-compose.yaml` creates a docker volume to persist the data.
 
+## Container Images
+
+- `[bloknodes/litecoin:latest](https://hub.docker.com/r/bloknodes/litecoin)`
+- `[bloknodes/litecoin:0.21.2.1](https://hub.docker.com/r/bloknodes/litecoin)`
+
 ## JSON RPC Examples
 
 <details>
