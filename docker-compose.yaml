@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  litecoind:
+    build: .
+    container_name: litecoind
+    restart: unless-stopped
+    cpus: 1.0
+    mem_limit: "512M"
+    stop_signal: SIGINT
+    stop_grace_period: 2m # wait 2m before sending SIGKILL
+    ports:
+      # - 9332:9332 # mainnet rpcport
+      - 19332:19332 # testnet rpcport
+    environment:
+      - NETWORK=testnet
+    networks:
+      - bloknodes-network
+    volumes:
+      - bloknodes-volume:/blockchain
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  bloknodes-network:
+    name: bloknodes-network
+    
+volumes:
+  bloknodes-volume: {}
