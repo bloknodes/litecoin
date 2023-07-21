@@ -18,6 +18,11 @@ Persistence:
 
 ## Container Images
 
+The container image uses a base image which is available:
+- https://github.com/bloknodes/base-nodes
+
+The final images:
+
 - [bloknodes/litecoin:latest](https://hub.docker.com/r/bloknodes/litecoin)
 - [bloknodes/litecoin:0.21.2.1](https://hub.docker.com/r/bloknodes/litecoin)
 
