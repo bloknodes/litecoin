@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   litecoind:
+    # image: bloknodes/litecoin:0.21.2.1
     build: .
     container_name: litecoind
     restart: unless-stopped
